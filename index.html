@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socius Movies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <img src="assets\img\logo-mobile-content-socius-light.svg" alt="Logo Socius">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="random">
+                    <p>Haz click para elegir tu película al azar</p>
+                    <button type="button" class="btn btn-primary" onclick="getRandomMovie()">Random movie</button>
+                </div>
+                <div class="random-movie">
+                    <p id="title"></p>
+                    <p id="year"></p>
+                    <p id="genre"></p>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h3>o también puedes</h3>
+            </div>
+            <div class="col-lg-5 dropdown">
+                <div class="random">
+                    <p>Buscar tu película en la lista</p>
+                    <select name="movieList" id="movieList" onchange="getDataMovie(this.value)">
+                    </select>
+                </div>
+                <div class="random-movie">
+                    <p id="titleList"></p>
+                    <p id="yearList"></p>
+                    <p id="genreList"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js\script.js"></script>
+</body>
+
+</html>
